@@ -97,6 +97,7 @@ body {
     position: absolute;
     /* top: 40px; */
     right: 30px;
+    cursor: pointer;
 }
 
 .side-bar-list {
