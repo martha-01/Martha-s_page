@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Marta's Page</title>
+    <title>My Webpage</title>
 </head>
 <body>
+
+    <button class="open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
 
     <!-- TOP NAVIGATION -->
     <div class="main-nav">
         <ul class="main-nav-list">
-            <li id="site-title"><a href="#">page navigation</a></li>
-            <li><a href="Basic Website Structure With a Log In-page/index.html">Basic Website-structure With a Login-page</a></li>
-            <li><a href="#">missions</a></li>
-            <li><a href="#">discoveries</a></li>
-            <li><a href="#">news</a></li>
+            <!-- <li id="site-title"><a href="#">page navigation</a></li> -->
+            <li><a href="basicWebStructure/index.html" target="_blank">Basic Web Structure With a Login-page</a></li>
+            <li><a href="ourLifeInWeeks/index.html" target="_blank">'Our Life in Weeks'-app</a></li>
+            <li><a href="miniPiano/index.html" target="_blank">'Mini Piano'-app</a></li>
+            <li><a href="miniCalculator/index.html" target="_blank">Mini Calculator</a></li>
         </ul>
     </div>
-    <button class="open-btn">
-        <i class="fas fa-bars"></i>
-    </button>
+
 
     <!-- SIDE NAVIGATION -->
     <div class="wrap wrap-black">
@@ -31,31 +34,83 @@
                 <i class="fas fa-times"></i>
             </button>
             <br>
-            <a class="text" href="#">page navigation</a>
+            <!-- <a class="text" href="#">page navigation</a> -->
     
             <ul class="side-bar-list">
-                <li><a href="Basic Website Structure With a Log In-page/index.html">Basic Website-structure With a Login-page</a></li>
-                <li><a href="#">missions</a></li>
-                <li><a href="#">discoveries</a></li>
-                <li><a href="#">news</a></li>
+                <li><a href="basicWebStructure/index.html" target="_blank">Basic Web Structure With a Login-page</a></li>
+                <li><a href="ourLifeInWeeks/index.html" target="_blank">'Our Life in Weeks'-app</a></li>
+                <li><a href="miniPiano/index.html" target="_blank">'Mini Piano'-app</a></li>
+                <li><a href="miniCalculator/index.html" target="_blank">Mini Calculator</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="content">
-        <div class="container">
-            <iframe width="965" height="543" src="https://www.youtube.com/embed/LVCpDa6ymtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h1>SOME INFORMATION</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur illo est sint. Quis ad amet perferendis assumenda ducimus libero.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur inventore ad fuga quo alias quae aliquam voluptates, vitae obcaecati quod fugiat assumenda eaque quam excepturi facere ea, earum maxime sint nisi quas corrupti ex officiis sapiente nostrum! Laboriosam, autem fugiat tempora voluptatibus dolores, sed dolorum fuga tempore deleniti enim repellat.
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, veritatis?
-            </p>
+    
+
+    <div id="div1" class="my-divs">
+        
+        <div class="img-div">
+            <div>
+                <img src="img/Profile_photo.jpeg" alt="">
+            </div>
         </div>
+        <h1>Márta Kapocs</h1>
+        <i>About myself:</i>
+        <p>I've been told I'm a very creative person, always looking for better ways of doing things. I love theories, concepts. I ask "Why?" a lot. I'm at my best when I'm analyzing why things are happening the way they are happening. I'm also a highly responsible person, always trying to do my best in whatever area of life. I love learning new things, thus broadening my perspectives and helping other people in new ways. I am keen on returning to work after a longer period of home-making and child-rearing, which has broadened my skills and experience in several areas. Recently I gained considerable knowledge in frontend development that I'd like to make use of and develop further.</p>
+        <a href="#div2" id="btn1">Next Page</a>
+        <div id="arrow1" class="arrow-down"> </div>
+    </div>
+
+    <div id="div2" class="my-divs">
+        <div>
+            <img src="img/settings.png" alt="">
+            <h1>What am I up to?</h1>
+            <p>I'd love to learn new technologies and apply them to improve the work I do. I would be greatly honoured to join the team of your organization. I would be a valuable addition to your company and your business goals.</p>
+        </div>
+        <a href="#div3" id="btn2">Next Page</a>
+        <div id="arrow2" class="arrow-down"> </div>
+    </div>
+
+    <div id="div3" class="my-divs">
+        <div id="skill_title">
+            <h1>My Skill Set</h1>
+        </div>
+        <div class="skills-wrap">
+            <div class="skills">
+                <img src="img/html.png" alt="">
+                <h3>HTML</h3>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            </div>
+            <div class="skills">
+                <img src="img/css.png" alt="">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.</p>
+            </div>
+            <div class="skills">
+                <img src="img/js.png" alt="">
+                <h3>JavaScript</h3>
+                <p>JS is a programming language that is high-level, often just-in-time compiled, and multi-paradigm. As such, JavaScript supports event-driven, functional, and imperative programming styles. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.</p>
+            </div>
+        </div>
+        <a href="#div4" id="btn3">Next Page</a>
+        <div id="arrow3" class="arrow-down"> </div>
+    </div>
+
+    <div id="div4" class="my-divs">
+        <div class="overlay">
+            <div>
+                <h1>Contact Me</h1>
+                <p>Send me a message and I'll get back to you as soon as I can.</p>
+                <form action="https://formsubmit.co/marta.kapocs@gmail.com" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <a href="#div1" id="btn4">Next Page</a>
+        <div id="arrow4" class="arrow-up"> </div>
     </div>
     
 
