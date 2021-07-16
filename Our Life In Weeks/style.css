@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', 'sans-serif';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("road.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    text-align:center;
+    width: 25vw;
+    height: 50vh;
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1.2rem 1.2rem 3.1rem rgb(150, 133, 102);
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 155, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.3rem);
+    overflow: hidden;
+}
+
+button, input, p {
+    padding: 0.9rem;
+    margin: 0.5rem;
+    font-size: medium;
+}
+
+#container>h1 {
+    font-style: italic;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.15rem #914e02;
+}
+
+#container>p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.15rem #914e02;
+
+}
+
+div#displayResult {
+    width: 18rem;
+    height: 10rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+#result {
+    font-size: 1rem;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#ageInput {
+    text-align: center;
+    border: none;
+    background: rgba(238, 185, 40, 0.1);
+    border-top: 0.12rem #dfac72 solid;
+    border-left: 0.16rem #f3e2cf solid;
+    box-shadow: 1.2rem 1.2rem 3.1rem rgb(150, 133, 102);
+    font-size: 1.5rem;
+    color: rgba(201, 156, 32, 0.8);
+    text-shadow:  0.1rem 0.1rem 0.4rem #d47d18;
+}
+
+#ageInput::placeholder {
+    color: rgba(201, 156, 32, 0.9);
+    font-size: medium;
+}
+
+#ageInput:focus {
+    outline: none;
+    background-color:rgb(243, 227, 198);
+}
+
+.refresh {
+    display: none;
+}
+
+#calcBtn {
+    background-color: #dfac72;
+    color: #694010;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.7s, background-color 0.7s;
+}
+#resetBtn {
+    background-color: #7c637b;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.7s, background-color 0.7s;
+}
+
+#calcBtn:hover {
+    background-color:  #694010;
+    color: #dfac72;
+}
+#resetBtn:hover {
+    background-color: rgb(243, 227, 198);
+    color: #7c637b;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.answer, .alert, .alert2 {
+    display: none;
+}
+
+.answer.active {
+    display: block;
+}
+
+.alert.active {
+    display: block;
+}
+
+.alert2.active {
+    display: block;
+}
+
+.footer, .footer a {
+    color: white;
+    font-weight: bolder;
+}
+.footer a:visited {
+    color:rgb(255, 208, 0);
+}
+.footer a:hover {
+    color: rgb(250, 235, 151);
+}
+
+
+
+@media(max-width: 56.25rem){
+    .container{
+        width: 100vw;
+    }
+    .container h1 {
+        font-size: 1rem;
+    }
+    .container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 50rem){
+    .container{
+        width: 60vw;
+    }
+}
+
+@media(max-width: 37.5rem){
+    .container{
+        width: 80vw;
+    }
+    .container h1 {
+        font-size: 1.5rem;
+    }
+    .container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 18.75rem){
+    .container{
+        width: 90vw;
+    }
+}
