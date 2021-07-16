@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    height: 100vh;
+    background: url("piano3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Quicksand', monospace;
+    font-weight:900;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.1rem rgb(15, 15, 15);
+    color:beige;
+    text-shadow: 2px 5px 5px rgb(255, 255, 255);
+}
+
+.keys {
+    background:rgba(255, 255, 255, 0.4);
+    height: 400px;
+    width: 50%;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0,0,0);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(255,255,255,0.5);
+}
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin: 2px;
+    height: 150px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 8px 5px;
+}
+button.activated {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 8px 5px;
+}
+.footer, .footer a {
+    color: white;
+    font-weight: bolder;
+}
+.footer a:visited {
+    color:rgb(255, 208, 0);
+}
+.footer a:hover {
+    color: rgb(250, 235, 151);
+}
+
+
+@media(max-width: 920px) {
+    .keys {
+        width: 90%;
+    }
+}
+@media(max-width: 800px) {
+    .keys {
+        width: 80%;
+    }
+}
