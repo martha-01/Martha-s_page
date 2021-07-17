@@ -62,7 +62,7 @@ body {
 
 .wrap-black {
     position: fixed;
-    background-color: black;
+    background-color: rgb(228, 190, 95);
     width: 25%;
     max-width: 30rem;
     transition-delay: 0.2s;
